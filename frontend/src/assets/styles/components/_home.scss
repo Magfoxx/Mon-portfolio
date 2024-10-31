@@ -1,0 +1,63 @@
+@import '../settings';
+
+// ========= Style de la section Accueil ========= //
+
+.home {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100vh;
+  position: relative; // Pour le positionnement absolu de la Navbar en bas
+
+  .home_gradient {
+    z-index: 5;
+    background-color: $color-3;
+    filter: blur(200px);
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    display: block;
+    position: absolute;
+    inset: -8% auto auto -13%;
+  }
+
+  &_left {
+    @include flex-center(column);
+    padding: 2rem;
+
+    & h1 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: $color-3;
+    }
+
+    & p {
+      font-family: $font-secondary;
+      font-size: 4.5rem;
+      color: $color-1;
+    }
+  }
+
+  &_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+
+    & h2 {
+      font-family: $font-secondary;
+    }
+
+    & p {
+      margin-top: 50px;
+      text-align: left;
+    }
+  }
+
+  .right {
+    opacity: 0.6;
+    filter: blur(180px);
+    margin-top: 10rem;
+    inset: 0% 0% auto auto;
+  }
+}
