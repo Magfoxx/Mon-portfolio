@@ -10,6 +10,8 @@ import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
+import '../assets/styles/components/_homeSeparation.scss';
+
 const Home = () => {
   return (
     <div>
@@ -21,15 +23,21 @@ const Home = () => {
           <Accueil />
         </Element>
 
+        <div className='home_separation'></div>
+
         {/* Section About */}
         <Element name="about" className="section about-section" id="about">
           <About />
         </Element>
 
+        <div className='home_separation'></div>
+
         {/* Section Projects */}
         <Element name="projects" className="section projects-section" id="projects">
           <Projects />
         </Element>
+
+        <div className='home_separation'></div>
 
         {/* Section Contact */}
         <Element name="contact" className="section contact-section" id="contact">

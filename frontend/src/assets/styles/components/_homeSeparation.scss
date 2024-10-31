@@ -1,0 +1,37 @@
+@import '../settings';
+
+.home_separation {
+  width: 70%;
+  height: 2px;
+  background: $color-border;
+  position: relative;
+  overflow: hidden;
+  margin: 2rem auto;
+
+  /* Effet de la lumière */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 33%;
+    width: 35%;
+    height: 10px;
+    background-image: linear-gradient(
+      90deg,
+      #0000,
+      #2cf8ff,
+      #0000
+    );
+    animation: lightSweep 3s ease-in-out infinite alternate;
+  } 
+}
+
+/* Animation pour le va-et-vient */
+@keyframes lightSweep {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

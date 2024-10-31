@@ -1,3 +1,42 @@
 @import '../settings';
 
 // ========= Style de la section A propos ========= //
+
+@import '../settings';
+
+// ========= Style de la section À propos ========= //
+
+.about {
+
+  height: 100vh;
+  padding: 4rem 2rem;
+  color: $color-1;
+
+  &_title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $color-3;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &_content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff;
+    padding: 1rem 2rem;
+
+    p {
+      margin-bottom: 1.5rem;
+
+      strong {
+        color: $color-3;
+      }
+
+      em {
+        font-style: italic;
+        color: $color-3;
+      }
+    }
+  }
+}
