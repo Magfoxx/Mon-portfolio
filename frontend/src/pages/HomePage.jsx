@@ -2,8 +2,6 @@ import React from 'react';
 import { Element } from 'react-scroll';
 
 // Importation des composants
-import Header from '../components/Header';
-import Navbar from '../components/Navbar';
 import Accueil from '../components/Home';
 import About from '../components/About';
 import Projects from '../components/Projects';
@@ -14,12 +12,10 @@ import '../assets/styles/components/_homeSeparation.scss';
 
 const Home = () => {
   return (
-    <div>
+    <div className='homePage-container'>
       <main>
         {/* Section Home */}
         <Element name="home" className="section home-section" id="home">
-          <Header />
-          <Navbar />
           <Accueil />
         </Element>
 
@@ -43,9 +39,8 @@ const Home = () => {
         <Element name="contact" className="section contact-section" id="contact">
           <Contact />
         </Element>
-
-        <Footer />
       </main>
+      <Footer />
     </div>
   );
 };

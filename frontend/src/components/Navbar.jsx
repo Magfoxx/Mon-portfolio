@@ -1,9 +1,11 @@
 import React, { useEffect, useState, useRef } from 'react';
+import { FaBars } from 'react-icons/fa';
 import '../assets/styles/components/_navbar.scss';
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navbarRef = useRef(null);
   const initialPosition = useRef(0);
 
@@ -14,10 +16,8 @@ const Navbar = () => {
 
     const handleScroll = () => {
       if (navbarRef.current) {
-        // Activer sticky lorsque le défilement atteint la position d'origine de la navbar
         setIsSticky(window.scrollY >= initialPosition.current);
 
-        // Détection de la section visible et mise à jour de l'état activeSection
         const sections = ['home', 'about', 'projects', 'contact'];
         sections.forEach((sectionId) => {
           const section = document.getElementById(sectionId);
@@ -39,12 +39,17 @@ const Navbar = () => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
+      setIsMobileMenuOpen(false); // Ferme le menu mobile après la navigation
     }
   };
 
   return (
     <nav ref={navbarRef} className={`navbar ${isSticky ? 'sticky' : ''}`}>
-      <ul className="navbar_menu">
+      <div className="navbar_burger" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+        <FaBars />
+      </div>
+
+      <ul className={`navbar_menu ${isMobileMenuOpen ? 'navbar_menu--mobile' : ''}`}>
         <li className="navbar_item">
           <a
             href="#home"
@@ -85,6 +90,13 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
+
+      <div className="header_right_container">
+        <div className="header_right_circle"></div>
+        <div className="header_right_marquee">
+          <span className="header_right_text">Disponible</span>
+        </div>
+      </div>
     </nav>
   );
 };

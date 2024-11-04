@@ -3,14 +3,14 @@
 // ========= Style du Header ========= //
 
 .header {
+  max-width: 1300px;
   width: 100%;
   height: 60px;
-  padding-top: 20px;
   @include flex-center($justify: space-between);
+  padding: 0 30px;
 
   &_left {
     @include flex-center($justify: left);
-
 
     &_logo {
       width: 30px;
@@ -25,8 +25,9 @@
   }
 
   &_right {
-    @include flex-center($justify: right);
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 
     p {
       padding-right: 20px;
@@ -40,7 +41,7 @@
       border-radius: 50px;
       width: 150px;
       height: 40px;
-      overflow: hidden; /* Cache le débordement du conteneur */
+      overflow: hidden;
 
       .header_right_circle {
         background-color: $color-5;
@@ -59,7 +60,7 @@
           left: 15px;
           width: 25px;
           height: 50px;
-          background-image: linear-gradient(92deg, #0A131A, #0000,);
+          background-image: linear-gradient(92deg, #0A131A, #0000);
           z-index: 1;
         }
       }
@@ -107,11 +108,23 @@
 @keyframes marquee {
   0% {
     transform: translateX(170%);
-    /* Commence à l'extrémité droite du conteneur */
   }
 
   100% {
     transform: translateX(-100%);
-    /* Défile vers la gauche en sortant du conteneur */
+  }
+}
+
+// ========== Responsive Design ========== //
+
+@media (max-width: 768px) {
+  .header {
+    &_left {
+      display: none;
+    }
+
+    &_right {
+      display: none;
+    }
   }
 }

@@ -1,0 +1,49 @@
+@import '../settings';
+
+.home,
+.about,
+.projects,
+.contact {
+  position: relative; // Positionnement relatif pour contenir les gradients
+
+  .gradient_home-1,
+  .gradient_home-2,
+  .gradient_home-3,
+  .gradient_about-1,
+  .gradient_about-2 {
+    background-color: $color-3;
+    filter: blur(200px);
+    border-radius: 50%;
+    position: absolute; // Permet de placer les gradients sans impacter la mise en page
+    pointer-events: none;
+    z-index: -1; // Derrière le contenu de la section
+  }
+
+  .gradient_home-1 {
+    width: 20rem;
+    height: 20rem;
+    top: -8%;
+    left: 0;
+  }
+
+  .gradient_home-2 {
+    width: 20rem;
+    height: 20rem;
+    top: 25%;
+    right: -10%;
+  }
+
+  .gradient_about-1 {
+    width: 20rem;
+    height: 20rem;
+    top: 50%;
+    left: -10%;
+  }
+
+  .gradient_about-2 {
+    width: 35rem;
+    height: 24rem;
+    top: 30%;
+    right: -15%;
+  }
+}

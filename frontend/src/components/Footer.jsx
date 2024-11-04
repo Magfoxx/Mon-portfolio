@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className='footer'>
       <div className='footer_left'>
         <img className='footer_left_logo' src={Logo} alt="logo" />
-        <p className='footer_left_name'>MagnusFoxx</p>
+        <p className='footer_left_name'>Martial Hamcha</p>
       </div>
 
       <div className='footer_center'>

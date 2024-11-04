@@ -1,31 +1,89 @@
 // ========= Style des Paramètres de Base ========= //
 
+// Styles globaux pour toutes les balises
 * {
-
-  text-align: center;
   color: white;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+// Centrage de l'application
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+
+// Défilement fluide pour tout l'HTML
 html {
   scroll-behavior: smooth;
 }
 
+// Styles du body
 body {
   font-family: $font-primary;
   background-color: black;
+  overflow-x: hidden; // Cache le défilement horizontal
+  line-height: 1.6;
 }
 
+// Centrage du main pour les sections internes
 main {
-@include flex-center(column);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 1300px;
 }
 
+// Suppression des puces de liste
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
+// Lien sans soulignement
 a {
+  color: inherit;
   text-decoration: none;
+}
+
+// Styles pour les titres
+h1, h2, h3 {
+  font-family: $font-secondary;
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+// Bouton avec effet de survol
+button {
+  position: relative;
+  overflow: hidden;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: $color-1;
+  background-color: $color-background-border;
+  border: 1px solid $color-border;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: color 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0px 0px 15px $color-3;
+  }
+}
+// Style des sections pour le placement et la profondeur
+section {
+  z-index: 2;
+  display: block;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
 }

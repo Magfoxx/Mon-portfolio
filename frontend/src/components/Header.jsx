@@ -1,6 +1,7 @@
 // Header.jsx
 import React from 'react';
 import Logo from '../assets/images/logo.png';
+import Navbar from './Navbar';
 import '../assets/styles/layout/_header.scss';
 
 const Header = () => {
@@ -8,11 +9,11 @@ const Header = () => {
     <header className='header'>
       <div className='header_left'>
         <img className='header_left_logo' src={Logo} alt="logo" />
-        <p className='header_left_name'>MagnusFoxx</p>
+        <p className='header_left_name'>Martial Hamcha</p>
       </div>
 
       <div className='header_right'>
-        <p>Developpeur web</p>
+        <p>Développeur web</p>
         <div className='header_right_container'>
           <div className='header_right_circle'></div>
           <div className='header_right_marquee'>
@@ -20,6 +21,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <Navbar />
     </header>
   );
 };

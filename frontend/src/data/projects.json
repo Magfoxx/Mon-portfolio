@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Booki",
+    "description": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
+    "imageUrl": "url vers l'image",
+    "projectLink": ""
+  },
+  {
+    "id": 2,
+    "title": "Portfolio Archtecte Sophie Bluel",
+    "description": "Créez une page web dynamique avec JavaScript",
+    "imageUrl": "url vers l'image",
+    "projectLink": ""
+  },
+  {
+    "id": 3,
+    "title": "Nina Carducci",
+    "description": "Déboggage et optimisation d'un site de photographe",
+    "imageUrl": "url vers l'image",
+    "projectLink": ""
+  },
+  {
+    "id": 4,
+    "title": "KASA",
+    "description": "Créez une application web de location immobilière avec React",
+    "imageUrl": "url vers l'image",
+    "projectLink": ""
+  },
+  {
+    "id": 5,
+    "title": "Mon Vieux Grimoire",
+    "description": "Développez le back-end d'un site de notation de livres",
+    "imageUrl": "url vers l'image",
+    "projectLink": ""
+  },
+  {
+    "id": 6,
+    "title": "Application de Suivi d'Activité Physique",
+    "description": "Application mobile pour suivre l'activité physique, enregistrer les séances et fixer des objectifs.",
+    "imageUrl": "url vers l'image",
+    "projectLink": ""
+  },
+  {
+    "id": 7,
+    "title": "Menu Maker",
+    "description": "Planifier le développement d'un site client.",
+    "imageUrl": "url vers l'image",
+    "projectLink": ""
+  },
+  {
+    "id": 8,
+    "title": "Portfolio MagnusFoxx",
+    "description": "",
+    "imageUrl": "url vers l'image",
+    "projectLink": ""
+  }
+]
