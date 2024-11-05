@@ -1,19 +1,16 @@
-// Router.jsx
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from '../pages/HomePage';
-import Error404 from '../pages/NoPage';
+import { Routes, Route } from 'react-router-dom';
+import Home from '../pages/HomePage';
 import ProjectDetail from '../pages/ProjectDetail';
+import NotFound from '../pages/NoPage';
 
 const AppRouter = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/project/:id" element={<ProjectDetail />} />
-        <Route path="*" element={<Error404 />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/project/:id" element={<ProjectDetail />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 };
 
