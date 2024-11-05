@@ -5,7 +5,7 @@ import HomePage from '../pages/HomePage';
 import Error404 from '../pages/NoPage';
 import ProjectDetail from '../pages/ProjectDetail';
 
-const Router = () => {
+const AppRouter = () => {
   return (
     <Router>
       <Routes>
@@ -17,4 +17,4 @@ const Router = () => {
   );
 };
 
-export default Router;
+export default AppRouter;
