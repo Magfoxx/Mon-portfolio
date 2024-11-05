@@ -13,7 +13,7 @@ const Footer = () => {
 
       <div className='footer_center'>
         <div className='footer_center_contact'>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <a href="https://www.linkedin.com/in/martial-hamcha-08a6b8162" target="_blank" rel="noopener noreferrer" className="social-icon">
             <FaLinkedin />
           </a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">

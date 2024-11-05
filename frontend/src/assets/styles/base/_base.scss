@@ -1,3 +1,5 @@
+@import '../../styles/utils/variables';
+
 // ========= Style des Paramètres de Base ========= //
 
 // Styles globaux pour toutes les balises
@@ -80,10 +82,10 @@ button {
 }
 // Style des sections pour le placement et la profondeur
 section {
-  z-index: 2;
+  z-index: 1;
   display: block;
   padding: 2rem;
   width: 100%;
   max-width: 1300px;
-  margin: auto;
+  margin: 2rem auto; // Espacement entre les sections
 }
