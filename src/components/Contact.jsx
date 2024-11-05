@@ -37,17 +37,38 @@ const Contact = () => {
       <form className="contact_form" onSubmit={handleSendEmail}>
         <div className="form_group">
           <label htmlFor="name">Nom</label>
-          <input type="text" id="name" name="name" required onChange={handleInputChange} />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            onChange={handleInputChange}
+            autoComplete="name" // Ajout de l'attribut autocomplete
+          />
         </div>
 
         <div className="form_group">
           <label htmlFor="email">Email</label>
-          <input type="email" id="email" name="email" required onChange={handleInputChange} />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            onChange={handleInputChange}
+            autoComplete="email" // Ajout de l'attribut autocomplete
+          />
         </div>
 
         <div className="form_group message">
           <label htmlFor="message">Message</label>
-          <textarea id="message" name="message" rows="4" required onChange={handleInputChange}></textarea>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            onChange={handleInputChange}
+            autoComplete="off" // Autocomplete désactivé pour les messages
+          ></textarea>
         </div>
 
         {confirmationMessage && (

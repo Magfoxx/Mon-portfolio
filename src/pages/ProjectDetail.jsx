@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import NavbarDetail from '../components/NavbarDetail';
 import Footer from '../components/Footer';
 import { useParams } from 'react-router-dom';
 import data from '../data/projects.json';
@@ -14,15 +14,19 @@ const ProjectDetail = () => {
   }
 
   return (
-    <>
-    <Navbar isTop />
     <div className="project-details-page">
+      <NavbarDetail />
       <section className="project-details">
         <h2>{project.title}</h2>
         <img src={project.imageUrl} alt={project.title} className="project-details_image" />
         <div className="project-details_content">
           <p>{project.detailedDescription}</p>
-          <img src={project.logoUrl} alt={`${project.title} logo`} className="project-details_logo" />
+
+          {/* Affichage conditionnel du logo */}
+          {project.logoUrl && (
+            <img src={project.logoUrl} alt={`${project.title} logo`} className="project-details_logo" />
+          )}
+
           <div className="project-details_skills">
             <h3>Compétences utilisées :</h3>
             <ul>
@@ -38,7 +42,6 @@ const ProjectDetail = () => {
       </section>
       <Footer />
     </div>
-    </>
   );
 };
 

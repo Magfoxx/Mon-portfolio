@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { FaBars } from 'react-icons/fa';
+import { useLocation } from 'react-router-dom';
 import '../assets/styles/components/_navbar.scss';
 
 const Navbar = () => {
@@ -8,6 +9,12 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navbarRef = useRef(null);
   const initialPosition = useRef(0);
+
+  // Utiliser useLocation pour obtenir l'URL actuelle
+  const location = useLocation();
+
+  // Vérifier si l'URL est celle de ProjectDetail
+  const isProjectDetailPage = location.pathname.startsWith('/projects/'); // Exemple pour une URL `/projects/:id`
 
   useEffect(() => {
     if (navbarRef.current) {
@@ -44,7 +51,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav ref={navbarRef} className={`navbar ${isSticky ? 'sticky' : ''}`}>
+    <nav
+      ref={navbarRef}
+      className={`navbar ${isSticky && !isProjectDetailPage ? 'sticky' : ''} ${
+        isProjectDetailPage ? 'navbar_projectDetail' : ''
+      }`}
+    >
       <div className="navbar_burger" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
         <FaBars />
       </div>

@@ -1,0 +1,71 @@
+[
+  {
+    "id": 1,
+    "title": "Booki",
+    "description": "Intégration de la page d'accueil d'une agence de voyage avec HTML & CSS",
+    "detailedDescription": "En tant que développeur web chez Booki, une start-up spécialisée dans les services de voyage, j'ai travaillé sur la création de la page d'accueil du site permettant aux utilisateurs de rechercher des hébergements et activités dans leur ville de choix. Ce projet consistait à intégrer l'interface avec HTML et CSS en suivant des maquettes précises pour les versions desktop, tablette et mobile fournies par l'UI Designer. La structure de fichiers a été préparée en amont avec un code de base pour faciliter le démarrage. Le travail a impliqué une mise en page adaptée utilisant Flexbox et Grid, le respect des bonnes pratiques d'accessibilité, et l'intégration d'un formulaire de recherche adapté aux différents écrans. Le projet a nécessité de veiller aux normes du code W3C et à une bonne gestion du responsive design pour assurer une compatibilité optimale sur diverses tailles d'écran.",
+    "imageUrl": "https://i.postimg.cc/SsFRTvWM/booki-Page.png",
+    "logoUrl": "https://i.postimg.cc/9f41trpf/Booki-3x.png",
+    "skills": ["HTML", "CSS"],
+    "projectLink": "https://magfoxx.github.io/Projet_2_Booki/"
+  },
+  {
+    "id": 2,
+    "title": "Portfolio Architecte Sophie Bluel",
+    "description": "Création d'une page web dynamique avec JavaScript pour le portfolio d'une architecte d'intérieur",
+    "detailedDescription": "Dans le cadre de ce projet, j'ai travaillé en tant que développeur front-end pour réaliser une page dynamique et interactive pour le portfolio de Sophie Bluel, architecte d'intérieur. Le site met en avant les projets de l'architecte, permet un filtrage des travaux par catégorie, et inclut une interface d'administration sécurisée permettant la gestion du contenu. Le projet impliquait la récupération et la gestion des données depuis une API back-end, l'ajout de fonctionnalités telles que la connexion et la suppression de projets via un formulaire en modale, ainsi qu'une page de connexion sécurisée. Ce projet, conçu pour améliorer l'expérience utilisateur et faciliter la gestion des contenus pour l'administrateur, s'est finalisé par la mise en place d'un design responsive pour une accessibilité optimale sur tous les écrans.",
+    "imageUrl": "https://i.postimg.cc/9MNrCQ9v/Sophie-Bluel-Page.png",
+    "skills": ["JavaScript", "HTML", "CSS", "API REST", "Gestion de contenu", "Responsive Design"],
+    "projectLink": "https://github.com/Magfoxx/Portfolio-archtecte-sophie-bluel"
+  },
+  {
+    "id": 3,
+    "title": "Nina Carducci",
+    "description": "Déboggage et optimisation d'un site de photographe",
+    "detailedDescription": "Optimisation SEO et performances du site de la photographe Nina Carducci. L'objectif du projet était d'améliorer la vitesse de chargement, le référencement local et l'accessibilité. Des corrections de bugs dans la galerie d'images et les filtres de catégories ont également été effectuées, et un rapport d'optimisation détaillé a été fourni.",
+    "imageUrl": "https://i.postimg.cc/JncLM1FR/Nina-Carducci.png",
+    "logoUrl": "",
+    "projectLink": "https://magfoxx.github.io/P4-Nina-Carducci/",
+    "skills": ["Optimisation SEO", "Amélioration des performances", "Accessibilité", "Correction de bugs", "JavaScript", "HTML/CSS"]
+  },
+  {
+    "id": 4,
+    "title": "KASA",
+    "description": "Création d'une application web de location immobilière avec React",
+    "detailedDescription": "Le projet KASA consistait en une refonte complète du site de location immobilière de l'entreprise, visant à moderniser et optimiser son expérience utilisateur avec React. En partant d'une base de données JSON en l'absence de back-end opérationnel, l'application a été développée en suivant les maquettes Figma pour assurer un design responsive et des interactions fluides. J'ai implémenté des fonctionnalités de navigation avec React Router, une galerie de photos fonctionnelle avec défilement des images, et des menus déroulants interactifs pour les informations complémentaires des annonces. Le projet comprend également une gestion des erreurs de navigation, avec une redirection vers une page d'erreur en cas d'URL incorrecte. Chaque composant a été structuré pour garantir une utilisation réactive et performante, offrant aux utilisateurs une interface moderne et efficace pour explorer les annonces.",
+    "imageUrl": "https://i.postimg.cc/Jnhq4x6t/KasaPage.png",
+    "logoUrl": "https://i.postimg.cc/Y05fRHpm/Logo-Kasa.png",
+    "skills": ["React", "JavaScript", "CSS", "Responsive Design", "React Router", "Gestion de composants"],
+    "projectLink": "https://github.com/Magfoxx/P5_KASA"
+  },
+  {
+    "id": 5,
+    "title": "Mon Vieux Grimoire",
+    "description": "Développez le back-end d'un site de notation de livres",
+    "detailedDescription": "Développement d'un backend sécurisé pour un site où les utilisateurs peuvent noter et partager leurs lectures.",
+    "imageUrl": "https://i.postimg.cc/MG3sBgj1/MVGPage.png",
+    "logoUrl": "https://i.postimg.cc/fL38f5xp/LogoMVG.png",
+    "skills": ["Node.js", "Express", "MongoDB"],
+    "projectLink": "https://github.com/Magfoxx/P6-Mon-vieux-grimoire"
+  },
+  {
+    "id": 6,
+    "title": "Menu Maker",
+    "description": "Planification du développement d'un site client",
+    "detailedDescription": "Ce projet consiste à planifier et organiser le développement d'un site client 'Menu Maker', un outil permettant aux restaurateurs de créer et mettre en page leurs menus en ligne facilement. Les principales étapes comprenaient la création de spécifications techniques, un tableau Kanban détaillé pour le suivi du développement, ainsi qu'une présentation synthétique pour le client. Le projet demandait une veille technologique poussée pour évaluer les outils techniques adaptés, ainsi qu'une planification minutieuse des tâches avec des estimations de complexité. La structure des spécifications et la répartition des tâches ont permis de baliser chaque phase de développement de manière claire, en tenant compte des exigences du client et des priorités établies.",
+    "imageUrl": "https://i.postimg.cc/VkQPr0cz/Menu-Maker-Page.png",
+    "logoUrl": "",
+    "skills": ["JavaScript", "Gestion de projet", "Kanban", "Veille technologique"],
+    "projectLink": "https://github.com/Magfoxx/P7-Menu-Maker"
+  },
+  {
+    "id": 7,
+    "title": "Portfolio Martial Hamcha",
+    "description": "Un portfolio professionnel pour présenter mes travaux de développement web.",
+    "detailedDescription": "Ce projet est mon portfolio personnel en cours de développement, celui sur lequel vous vous trouvez actuellement. Conçu pour présenter mes compétences, mes expériences et les projets réalisés en développement web. Développé avec React, JavaScript, et CSS, ce portfolio intègre une interface interactive et des fonctionnalités dynamiques comme la navigation entre pages sans rechargement, un design responsive et une optimisation de l'accessibilité. Chaque section est soigneusement structurée pour guider les visiteurs dans l'exploration de mon parcours professionnel, mes compétences techniques et les projets majeurs que j'ai réalisés.",
+    "imageUrl": "https://i.postimg.cc/DZHnxCRX/Capture-d-e-cran-2024-11-05-a-16-51-02.png",
+    "logoUrl": "https://i.postimg.cc/bNv9xmpT/LogoMH.png",
+    "skills": ["React", "JavaScript", "CSS"],
+    "projectLink": ""
+  }
+]
