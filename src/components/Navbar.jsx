@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
-import { useLocation } from 'react-router-dom';
 import '../assets/styles/components/_navbar.scss';
 
 const Navbar = () => {
@@ -10,11 +10,8 @@ const Navbar = () => {
   const navbarRef = useRef(null);
   const initialPosition = useRef(0);
 
-  // Utiliser useLocation pour obtenir l'URL actuelle
   const location = useLocation();
-
-  // Vérifier si l'URL est celle de ProjectDetail
-  const isProjectDetailPage = location.pathname.startsWith('/projects/'); // Exemple pour une URL `/projects/:id`
+  const isProjectDetailPage = location.pathname.startsWith('/projects/');
 
   useEffect(() => {
     if (navbarRef.current) {
@@ -24,7 +21,6 @@ const Navbar = () => {
     const handleScroll = () => {
       if (navbarRef.current) {
         setIsSticky(window.scrollY >= initialPosition.current);
-
         const sections = ['home', 'about', 'projects', 'contact'];
         sections.forEach((sectionId) => {
           const section = document.getElementById(sectionId);
@@ -46,16 +42,20 @@ const Navbar = () => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
-      setIsMobileMenuOpen(false); // Ferme le menu mobile après la navigation
-    }
+      setIsMobileMenuOpen(false);
+
+      // Met à jour l'URL sans ajouter plusieurs #/
+      if (window.location.hash !== `#${sectionId}`) {
+        window.history.replaceState(null, '', `#${sectionId}`);
+      };
+    };
   };
 
   return (
     <nav
       ref={navbarRef}
-      className={`navbar ${isSticky && !isProjectDetailPage ? 'sticky' : ''} ${
-        isProjectDetailPage ? 'navbar_projectDetail' : ''
-      }`}
+      className={`navbar ${isSticky && !isProjectDetailPage ? 'sticky' : ''} ${isProjectDetailPage ? 'navbar_projectDetail' : ''
+        }`}
     >
       <div className="navbar_burger" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
         <FaBars />
@@ -63,43 +63,43 @@ const Navbar = () => {
 
       <ul className={`navbar_menu ${isMobileMenuOpen ? 'navbar_menu--mobile' : ''}`}>
         <li className="navbar_item">
-          <a
-            href="#home"
+          <Link
+            to="/#home"
             onClick={() => scrollToSection('home')}
             className={activeSection === 'home' ? 'active-link' : ''}
           >
             Accueil
-          </a>
+          </Link>
         </li>
         <div className="separator"></div>
         <li className="navbar_item">
-          <a
-            href="#about"
+          <Link
+            to="/#about"
             onClick={() => scrollToSection('about')}
             className={activeSection === 'about' ? 'active-link' : ''}
           >
             À propos
-          </a>
+          </Link>
         </li>
         <div className="separator"></div>
         <li className="navbar_item">
-          <a
-            href="#projects"
+          <Link
+            to="/#projects"
             onClick={() => scrollToSection('projects')}
             className={activeSection === 'projects' ? 'active-link' : ''}
           >
             Projets
-          </a>
+          </Link>
         </li>
         <div className="separator"></div>
         <li className="navbar_item">
-          <a
-            href="#contact"
+          <Link
+            to="/#contact"
             onClick={() => scrollToSection('contact')}
             className={activeSection === 'contact' ? 'active-link' : ''}
           >
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
 

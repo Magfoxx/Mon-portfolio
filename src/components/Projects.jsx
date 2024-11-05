@@ -18,6 +18,9 @@ const Projects = () => {
           />
         ))}
       </div>
+      <div className="gradient_projects-1"></div>
+      <div className="gradient_projects-2"></div>
+      <div className="gradient_projects-3"></div>
     </section>
   );
 };

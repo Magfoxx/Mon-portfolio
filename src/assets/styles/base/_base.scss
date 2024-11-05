@@ -19,6 +19,11 @@
   margin: auto;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 // Défilement fluide pour tout l'HTML
 html {
   scroll-behavior: smooth;
@@ -28,7 +33,6 @@ html {
 body {
   font-family: $font-primary;
   background-color: black;
-  overflow-x: hidden; // Cache le défilement horizontal
   line-height: 1.6;
 }
 
