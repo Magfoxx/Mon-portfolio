@@ -1,6 +1,8 @@
+// About.js
 import React, { useEffect, useRef, useState } from 'react';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from 'react-icons/fa';
 import { SiExpress, SiMongodb } from 'react-icons/si';
+import Modal from '../components/Modale';
 import '../assets/styles/components/_about.scss';
 
 const About = () => {
@@ -15,6 +17,7 @@ const About = () => {
   ];
 
   const [isVisible, setIsVisible] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const aboutRef = useRef(null);
 
   useEffect(() => {
@@ -58,7 +61,7 @@ const About = () => {
           </div>
           <div className="about_left_cv">
             <h3 className='about_left_cv_title'>Mon CV</h3>
-            <button>Voir mon CV</button>
+            <button onClick={() => setIsModalOpen(true)}>Voir mon CV</button>
           </div>
         </div>
         <div className="about_right">
@@ -73,6 +76,13 @@ const About = () => {
       </div>
       <div className="gradient_about-1"></div>
       <div className="gradient_about-2"></div>
+
+      {/* Modale pour le CV */}
+      <Modal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        cvUrl="/path/to/your/CV.pdf" 
+      />
     </section>
   );
 };
