@@ -21,14 +21,14 @@
 
   &_image {
     width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: cover;
     object-position: top; // Positionne l'image en haut
     border-bottom: 2px solid $color-border;
   }
 
   &_content {
-    padding: 1.5rem;
+    padding: 0.5rem 1.5rem;
     background-color: $color-background-border;
 
     &_title {

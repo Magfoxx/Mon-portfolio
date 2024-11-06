@@ -14,12 +14,13 @@
   border-radius: 50px;
   border-bottom: 1px solid $color-3;
   backdrop-filter: blur(10px);
-  z-index: 100;
+  z-index: 49;
   transition: all 0.3s ease;
 
   &.sticky {
     position: fixed;
     top: 0;
+    z-index: 55;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -54,7 +55,7 @@
     gap: 1rem;
     border-radius: 0 0 30px 30px;
     border-bottom: 1px solid $color-3;
-    z-index: 100;
+    z-index: 49;
     background-color: $color-2;
     opacity: 0.93;
     box-shadow: 0px 4px 10px -5px $color-3;
@@ -105,7 +106,7 @@
     font-size: 1.5rem;
     color: $color-3;
     cursor: pointer;
-    z-index: 101;
+    z-index: 49;
 
     @media (max-width: 768px) {
       display: block;
