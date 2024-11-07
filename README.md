@@ -7,7 +7,6 @@ Ce projet est un portfolio personnel développé avec React pour présenter mes 
 - **Navigation fluide** entre les sections : Accueil, À propos, Projets, Contact.
 - **Affichage dynamique** des projets avec des descriptions et des images.
 - **Design responsive** pour une expérience utilisateur optimale sur tous les appareils.
-- **Scroll to top** : Fonctionnalité pour remonter facilement en haut de la page.
 
 ## Technologies Utilisées
 - **React** : Bibliothèque JavaScript pour construire l'interface utilisateur.
@@ -17,5 +16,4 @@ Ce projet est un portfolio personnel développé avec React pour présenter mes 
 
 ## Installation
 1. Clonez le dépôt :
-   ```bash
-   git clone => mettre le lien du repo ici !
+   git clone = https://github.com/Magfoxx/Mon-portfolio.git

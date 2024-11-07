@@ -5,6 +5,7 @@ import Header from './Header';
 import '../assets/styles/components/_home.scss';
 import '../assets/styles/components/_blurBackground.scss';
 
+// Fonction qui permet le scroll en douceur vers les différentes sections de la page
 const scrollToSection = (sectionId) => {
   const section = document.getElementById(sectionId);
   if (section) {
