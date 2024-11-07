@@ -32,8 +32,9 @@
     margin-top: 1rem;
 
     h3 {
-      color: $color-3;
+      color: $color-1;
       margin-bottom: 0.5rem;
+      text-transform: uppercase;
     }
 
     ul {
@@ -42,11 +43,12 @@
 
       li {
         display: inline-block;
-        background: $color-3;
-        color: $color-background-border;
+        background: $color-background-border;
+        color: $color-1;
+        border: 1px solid $color-3;
         padding: 0.3rem 0.6rem;
         margin: 0.2rem;
-        border-radius: 4px;
+        border-radius: 15px;
       }
     }
   }
@@ -55,13 +57,14 @@
     display: inline-block;
     margin-top: 1.5rem;
     padding: 0.5rem 1.5rem;
-    color: $color-background-border;
-    background-color: $color-3;
+    color: $color-5;
+    border: 1px solid $color-5;
+    background-color: $color-background-border;
     border-radius: 20px;
     text-decoration: none;
 
     &:hover {
-      background-color: lighten($color-3, 10%);
+      box-shadow: 0px 0px 15px $color-3;
     }
   }
 }
