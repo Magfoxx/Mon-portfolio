@@ -18,7 +18,7 @@ const Modal = ({ isOpen, onClose }) => {
       <div className="modal_content" onClick={(e) => e.stopPropagation()}>
         <button className="modal_close" onClick={onClose}>×</button>
         <h2>Mon CV</h2>
-        <embed src={cvUrl} type="application/pdf" width="100%" height="600px" />
+        <iframe src={cvUrl} type="application/pdf" width="100%" height="600px" />
         <div className="modal_actions">
           <a href={cvUrl} download="CV.pdf" className="modal_button">Télécharger</a>
           <button onClick={handlePrint} className="modal_button">Imprimer</button>
