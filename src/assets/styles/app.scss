@@ -6,6 +6,15 @@
 @import './layout/footer';
 
 // Importation des styles des composants
+@import './components/home';
+@import './components/navbar';
 @import './components/about';
+@import './components/modale';
 @import './components/projects';
+@import './components/Cards';
+@import './components/projectDetail';
+@import './components/navbarDetail';
 @import './components/contact';
+@import './components/homeSeparation';
+@import './components/blurBackground';
+@import './components/error404';
