@@ -1,7 +1,7 @@
 {
   "name": "mon-portfolio",
   "version": "0.1.0",
-  "homepage": "https://magfoxx.github.io/Mon-portfolio",
+  "homepage": "https://magfoxx.github.io/Portfolio-Martial-Hamcha",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
