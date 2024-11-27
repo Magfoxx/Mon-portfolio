@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Mon-portfolio/static/css/main.b2f45c27.css",
-    "main.js": "/Mon-portfolio/static/js/main.f5125d9d.js",
-    "static/media/logo.png": "/Mon-portfolio/static/media/logo.75ec21cc38b7d38421b5.png",
-    "index.html": "/Mon-portfolio/index.html",
-    "main.b2f45c27.css.map": "/Mon-portfolio/static/css/main.b2f45c27.css.map",
-    "main.f5125d9d.js.map": "/Mon-portfolio/static/js/main.f5125d9d.js.map"
+    "main.css": "/Portfolio-Martial-Hamcha/static/css/main.b2f45c27.css",
+    "main.js": "/Portfolio-Martial-Hamcha/static/js/main.af1f6fbe.js",
+    "static/media/logo.png": "/Portfolio-Martial-Hamcha/static/media/logo.75ec21cc38b7d38421b5.png",
+    "index.html": "/Portfolio-Martial-Hamcha/index.html",
+    "main.b2f45c27.css.map": "/Portfolio-Martial-Hamcha/static/css/main.b2f45c27.css.map",
+    "main.af1f6fbe.js.map": "/Portfolio-Martial-Hamcha/static/js/main.af1f6fbe.js.map"
   },
   "entrypoints": [
     "static/css/main.b2f45c27.css",
-    "static/js/main.f5125d9d.js"
+    "static/js/main.af1f6fbe.js"
   ]
 }
